@@ -37,7 +37,7 @@ if __name__ == '__main__':
     parser.add_argument('--bearer_token', required=True,
                         help='Bearer token for Twitter API. See documentation here for details: https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens')
     parser.add_argument('--tweet_query', required=True,
-                        help='Query to pass to Twitter API e.g. "#foo #bar -is:retweet". See documentation here for details: https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query\nExample: "#foo #bar -is:retweet"')
+                        help='Query to pass to Twitter API e.g. "#myraffle -is:retweet". See documentation here for details: https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query\nExample: "#foo #bar -is:retweet"')
     parser.add_argument('--verbose', action='store_true')
     args = parser.parse_args()
 
