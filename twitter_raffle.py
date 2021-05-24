@@ -27,9 +27,9 @@ def get_next_recent_tweets(tweet_query, start_time, end_time, bearer_token, next
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--start_time', required=True,
-                        help='Earliest timestamp for eligible tweets, in ISO 8601 format')
+                        help='Earliest timestamp for eligible tweets, in ISO 8601 format e.g. "2021-05-21T18:50:00-07:00"')
     parser.add_argument('--end_time', required=True,
-                        help='Latest timestamp for eligible tweets, in ISO 8601 format')
+                        help='Latest timestamp for eligible tweets, in ISO 8601 format e.g. "2021-05-21T21:00:00-07:00"')
     parser.add_argument('--all', action='store_true',
                         help='If true, don\'t make any selections, just return all eligible tweets')
     parser.add_argument('--num_selections', type=int, required=True,
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     parser.add_argument('--bearer_token', required=True,
                         help='Bearer token for Twitter API. See documentation here for details: https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens')
     parser.add_argument('--tweet_query', required=True,
-                        help='Query to pass to Twitter API, as documented here: https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query\nExample: "#foo #bar -is:retweet"')
+                        help='Query to pass to Twitter API e.g. "#foo #bar -is:retweet". See documentation here for details: https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query\nExample: "#foo #bar -is:retweet"')
     parser.add_argument('--verbose', action='store_true')
     args = parser.parse_args()
 
