@@ -5,3 +5,4 @@ Script to randomly select users with eligible tweets in a given timeframe e.g. a
 Uses the following Twitter API endpoint, which searches tweets within the last 7 days: https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent
 
 The script requires an OAuth 2.0 Bearer Token to be provided, in order to call the API.  This is described here: https://developer.twitter.com/en/docs/authentication/oauth-2-0
+You should be able to obtain one of these by signing up for a free Twitter developer account, for example.
